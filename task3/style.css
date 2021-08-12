@@ -1,5 +1,6 @@
 img {
-    width: 300px
+    width: 300px;
+    animation-timing-function: linear;
 }
 
 #race {
@@ -8,3 +9,13 @@ img {
 
 
 /* Your code goes here: */
+
+@keyframes right {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100vw);
+    }
+}

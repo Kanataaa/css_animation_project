@@ -1,5 +1,40 @@
+body {
+    animation: colorChange 8s infinite;
+}
+
 img {
     width: 150px;
+    animation: infZig 5s infinite;
+    animation-timing-function: linear;
 }
 
 /* Your code here */
+
+@keyframes colorChange {
+    0% {
+        background-color: white;
+    }
+
+    75% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+
+@keyframes infZig {
+    0% {
+        transform: translateX(-455px);
+    }
+
+    50% {
+        transform: translateX(875px) translateY(600px);
+    }
+
+    100% {
+        transform: translateX(1950px) translateY(125px);
+    }
+}
